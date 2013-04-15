@@ -7,6 +7,7 @@
 //
 
 #import "SimpleTextInputAppDelegate.h"
+#import "InputViewController.h"
 
 @implementation SimpleTextInputAppDelegate
 
@@ -14,6 +15,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    InputViewController *ivc = [[InputViewController alloc] init];
+    
+    [[self window] setRootViewController:ivc];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

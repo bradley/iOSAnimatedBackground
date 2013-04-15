@@ -16,6 +16,13 @@
 		ADD85D6E171B7B3F0094F45C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD85D6D171B7B3F0094F45C /* Default.png */; };
 		ADD85D70171B7B3F0094F45C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD85D6F171B7B3F0094F45C /* Default@2x.png */; };
 		ADD85D72171B7B3F0094F45C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD85D71171B7B3F0094F45C /* Default-568h@2x.png */; };
+		ADD85D7B171B7B550094F45C /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD85D79171B7B550094F45C /* InputViewController.m */; };
+		ADD85D7C171B7B550094F45C /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD85D7A171B7B550094F45C /* InputViewController.xib */; };
+		ADD85D7F171B80E90094F45C /* MovingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD85D7E171B80E90094F45C /* MovingObject.m */; };
+		ADD85D82171B87E70094F45C /* SimpleTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD85D81171B87E70094F45C /* SimpleTextInput.m */; };
+		ADD85D85171B88890094F45C /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD85D84171B88890094F45C /* ShapeView.m */; };
+		ADD85D88171B920F0094F45C /* StarfieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD85D87171B920F0094F45C /* StarfieldView.m */; };
+		ADD85D8A171B99410094F45C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD85D89171B99410094F45C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,18 @@
 		ADD85D6D171B7B3F0094F45C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ADD85D6F171B7B3F0094F45C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		ADD85D71171B7B3F0094F45C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ADD85D78171B7B550094F45C /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputViewController.h; path = ../InputViewController.h; sourceTree = "<group>"; };
+		ADD85D79171B7B550094F45C /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputViewController.m; path = ../InputViewController.m; sourceTree = "<group>"; };
+		ADD85D7A171B7B550094F45C /* InputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InputViewController.xib; path = ../InputViewController.xib; sourceTree = "<group>"; };
+		ADD85D7D171B80E90094F45C /* MovingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingObject.h; sourceTree = "<group>"; };
+		ADD85D7E171B80E90094F45C /* MovingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingObject.m; sourceTree = "<group>"; };
+		ADD85D80171B87E70094F45C /* SimpleTextInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTextInput.h; sourceTree = "<group>"; };
+		ADD85D81171B87E70094F45C /* SimpleTextInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTextInput.m; sourceTree = "<group>"; };
+		ADD85D83171B88880094F45C /* ShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeView.h; sourceTree = "<group>"; };
+		ADD85D84171B88890094F45C /* ShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeView.m; sourceTree = "<group>"; };
+		ADD85D86171B920F0094F45C /* StarfieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarfieldView.h; sourceTree = "<group>"; };
+		ADD85D87171B920F0094F45C /* StarfieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarfieldView.m; sourceTree = "<group>"; };
+		ADD85D89171B99410094F45C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD85D8A171B99410094F45C /* QuartzCore.framework in Frameworks */,
 				ADD85D5C171B7B3E0094F45C /* UIKit.framework in Frameworks */,
 				ADD85D5E171B7B3E0094F45C /* Foundation.framework in Frameworks */,
 				ADD85D60171B7B3E0094F45C /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +71,7 @@
 		ADD85D4F171B7B3E0094F45C = {
 			isa = PBXGroup;
 			children = (
+				ADD85D89171B99410094F45C /* QuartzCore.framework */,
 				ADD85D61171B7B3F0094F45C /* SimpleTextInput */,
 				ADD85D5A171B7B3E0094F45C /* Frameworks */,
 				ADD85D59171B7B3E0094F45C /* Products */,
@@ -80,6 +101,17 @@
 			children = (
 				ADD85D6A171B7B3F0094F45C /* SimpleTextInputAppDelegate.h */,
 				ADD85D6B171B7B3F0094F45C /* SimpleTextInputAppDelegate.m */,
+				ADD85D78171B7B550094F45C /* InputViewController.h */,
+				ADD85D79171B7B550094F45C /* InputViewController.m */,
+				ADD85D7A171B7B550094F45C /* InputViewController.xib */,
+				ADD85D86171B920F0094F45C /* StarfieldView.h */,
+				ADD85D87171B920F0094F45C /* StarfieldView.m */,
+				ADD85D83171B88880094F45C /* ShapeView.h */,
+				ADD85D84171B88890094F45C /* ShapeView.m */,
+				ADD85D7D171B80E90094F45C /* MovingObject.h */,
+				ADD85D7E171B80E90094F45C /* MovingObject.m */,
+				ADD85D80171B87E70094F45C /* SimpleTextInput.h */,
+				ADD85D81171B87E70094F45C /* SimpleTextInput.m */,
 				ADD85D62171B7B3F0094F45C /* Supporting Files */,
 			);
 			path = SimpleTextInput;
@@ -155,6 +187,7 @@
 				ADD85D6E171B7B3F0094F45C /* Default.png in Resources */,
 				ADD85D70171B7B3F0094F45C /* Default@2x.png in Resources */,
 				ADD85D72171B7B3F0094F45C /* Default-568h@2x.png in Resources */,
+				ADD85D7C171B7B550094F45C /* InputViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +200,11 @@
 			files = (
 				ADD85D68171B7B3F0094F45C /* main.m in Sources */,
 				ADD85D6C171B7B3F0094F45C /* SimpleTextInputAppDelegate.m in Sources */,
+				ADD85D7B171B7B550094F45C /* InputViewController.m in Sources */,
+				ADD85D7F171B80E90094F45C /* MovingObject.m in Sources */,
+				ADD85D82171B87E70094F45C /* SimpleTextInput.m in Sources */,
+				ADD85D85171B88890094F45C /* ShapeView.m in Sources */,
+				ADD85D88171B920F0094F45C /* StarfieldView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
