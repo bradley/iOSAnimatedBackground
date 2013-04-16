@@ -7,6 +7,8 @@
 //
 
 #import "StarfieldView.h"
+#import "MovingObject.h"
+#import "ShapeView.h"
 
 @implementation StarfieldView
 
@@ -14,18 +16,40 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+// Called instead of initWithFrame by XIB 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        CGRect bounds = [self bounds];
+        _shapes = [[NSMutableArray alloc] init];
+        int shapeCount = 5;
+        
+        for (int i = 0; i < shapeCount; i++) {
+            MovingObject *mo = [[MovingObject alloc] initWithBounds:bounds];
+            ShapeView *shape = [mo shape];
+            
+            [_shapes addObject:mo];
+            [self insertSubview:shape atIndex:0];
+            //[self addSubview:shape];
+            
+            shape.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+            shape.opaque = NO;
+        }
+    }
+    return self;
 }
-*/
+
+- (void)moveShapes {
+    for (MovingObject *mo in _shapes) {
+        [mo update];
+    }
+}
+
 
 @end

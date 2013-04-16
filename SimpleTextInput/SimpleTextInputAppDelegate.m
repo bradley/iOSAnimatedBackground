@@ -8,6 +8,7 @@
 
 #import "SimpleTextInputAppDelegate.h"
 #import "InputViewController.h"
+#import "StarfieldView.h"
 
 @implementation SimpleTextInputAppDelegate
 
@@ -17,6 +18,8 @@
     // Override point for customization after application launch.
     
     InputViewController *ivc = [[InputViewController alloc] init];
+    
+    [StarfieldView class];
     
     [[self window] setRootViewController:ivc];
     

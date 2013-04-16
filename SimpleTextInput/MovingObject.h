@@ -20,15 +20,13 @@
 @property CGPoint position;
 @property CGPoint trajectory;
 @property CGFloat velocity;
+@property NSInteger outerBounds;
+@property CGFloat angle;
+@property CGFloat angleStep;
+@property int clockwise;
 
-- (id)initWithBounds:(CGRect)b andPosition:(CGPoint)p;
+- (id)initWithBounds:(CGRect)b;
 
-- (BOOL)positionIsInsideBounds;
 - (void)update;
-
-- (void)hitTop;
-- (void)hitRight;
-- (void)hitBottom;
-- (void)hitLeft;
 
 @end

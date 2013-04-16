@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface StarfieldView : UIView
+{
+    
+}
+
+@property (nonatomic) NSMutableArray *shapes;
+
+- (void)moveShapes;
 
 @end

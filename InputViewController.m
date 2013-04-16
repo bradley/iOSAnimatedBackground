@@ -7,8 +7,7 @@
 //
 
 #import "InputViewController.h"
-#import "MovingObject.h"
-#import "ShapeView.h"
+#import "StarfieldView.h"
 
 @interface InputViewController ()
 
@@ -28,18 +27,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    CGRect bounds = [_backgroundView bounds];
-    _movingObject = [[MovingObject alloc] initWithBounds:bounds andPosition:CGPointMake(bounds.size.width / 2, bounds.size.height / 2)];
-    _shape = [_movingObject shape];
-    [_backgroundView insertSubview:_shape belowSubview:_descriptionText];
-    
     _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(gameLoop)];
     [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 }
 
 -(void)gameLoop
 {
-    [_movingObject update];
+    [_background moveShapes];
     
     //Here you could add your collision detection code
 }

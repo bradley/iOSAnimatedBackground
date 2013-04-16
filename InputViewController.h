@@ -9,16 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@class MovingObject, ShapeView;
+@class StarfieldView;
 
 @interface InputViewController : UIViewController
 {
     
 }
 
-@property (weak, nonatomic) IBOutlet UIView *backgroundView;
+@property (weak, nonatomic) IBOutlet StarfieldView *background;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionText;
-@property (nonatomic, retain) MovingObject *movingObject;
-@property (nonatomic, retain) ShapeView *shape;
 @property (nonatomic) CADisplayLink *displayLink;
 @end

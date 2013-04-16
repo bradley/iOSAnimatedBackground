@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ShapeView : UIView
+{
+    
+}
+@property UIColor *red;
+@property UIColor *green;
+@property UIColor *blue;
+@property UIColor *yellow;
+@property int shapeID;
 
 @end
