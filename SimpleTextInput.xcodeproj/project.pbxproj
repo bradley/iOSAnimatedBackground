@@ -23,6 +23,10 @@
 		ADD85D85171B88890094F45C /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD85D84171B88890094F45C /* ShapeView.m */; };
 		ADD85D88171B920F0094F45C /* StarfieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD85D87171B920F0094F45C /* StarfieldView.m */; };
 		ADD85D8A171B99410094F45C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD85D89171B99410094F45C /* QuartzCore.framework */; };
+		ADEB6396171F20F900B739A5 /* greenButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEB6395171F20F900B739A5 /* greenButton@2x.png */; };
+		ADEB6398171F210600B739A5 /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEB6397171F210600B739A5 /* greenButton.png */; };
+		ADEB639B171F25D300B739A5 /* greenButtonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEB6399171F25D300B739A5 /* greenButtonHighlighted@2x.png */; };
+		ADEB639C171F25D300B739A5 /* greenButtonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = ADEB639A171F25D300B739A5 /* greenButtonHighlighted.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		ADD85D86171B920F0094F45C /* StarfieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarfieldView.h; sourceTree = "<group>"; };
 		ADD85D87171B920F0094F45C /* StarfieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarfieldView.m; sourceTree = "<group>"; };
 		ADD85D89171B99410094F45C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ADEB6395171F20F900B739A5 /* greenButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenButton@2x.png"; sourceTree = "<group>"; };
+		ADEB6397171F210600B739A5 /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenButton.png; sourceTree = "<group>"; };
+		ADEB6399171F25D300B739A5 /* greenButtonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenButtonHighlighted@2x.png"; sourceTree = "<group>"; };
+		ADEB639A171F25D300B739A5 /* greenButtonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenButtonHighlighted.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,10 @@
 		ADD85D62171B7B3F0094F45C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ADEB6399171F25D300B739A5 /* greenButtonHighlighted@2x.png */,
+				ADEB639A171F25D300B739A5 /* greenButtonHighlighted.png */,
+				ADEB6397171F210600B739A5 /* greenButton.png */,
+				ADEB6395171F20F900B739A5 /* greenButton@2x.png */,
 				ADD85D63171B7B3F0094F45C /* SimpleTextInput-Info.plist */,
 				ADD85D64171B7B3F0094F45C /* InfoPlist.strings */,
 				ADD85D67171B7B3F0094F45C /* main.m */,
@@ -188,6 +200,10 @@
 				ADD85D70171B7B3F0094F45C /* Default@2x.png in Resources */,
 				ADD85D72171B7B3F0094F45C /* Default-568h@2x.png in Resources */,
 				ADD85D7C171B7B550094F45C /* InputViewController.xib in Resources */,
+				ADEB6396171F20F900B739A5 /* greenButton@2x.png in Resources */,
+				ADEB6398171F210600B739A5 /* greenButton.png in Resources */,
+				ADEB639B171F25D300B739A5 /* greenButtonHighlighted@2x.png in Resources */,
+				ADEB639C171F25D300B739A5 /* greenButtonHighlighted.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
