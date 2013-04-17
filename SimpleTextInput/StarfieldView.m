@@ -28,7 +28,7 @@
     if (self) {
         CGRect bounds = [self bounds];
         _shapes = [[NSMutableArray alloc] init];
-        int shapeCount = 5;
+        int shapeCount = 10;
         
         for (int i = 0; i < shapeCount; i++) {
             MovingObject *mo = [[MovingObject alloc] initWithBounds:bounds];
@@ -50,6 +50,5 @@
         [mo update];
     }
 }
-
 
 @end

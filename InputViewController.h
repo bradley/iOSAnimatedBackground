@@ -11,7 +11,7 @@
 
 @class StarfieldView;
 
-@interface InputViewController : UIViewController
+@interface InputViewController : UIViewController <UITextViewDelegate>
 {
     
 }
@@ -19,4 +19,6 @@
 @property (weak, nonatomic) IBOutlet StarfieldView *background;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionText;
 @property (nonatomic) CADisplayLink *displayLink;
+@property (nonatomic) CGRect defaultTextFrame;
+@property (nonatomic) UIColor *defaultTextBackground;
 @end

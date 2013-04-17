@@ -319,6 +319,7 @@
 				ADD85D77171B7B3F0094F45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
