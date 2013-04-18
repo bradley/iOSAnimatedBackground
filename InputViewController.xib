@@ -108,7 +108,7 @@
 												<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 											</object>
 										</array>
-										<string key="NSFrame">{{185, 6}, {72, 33}}</string>
+										<string key="NSFrame">{{136, 6}, {72, 33}}</string>
 										<reference key="NSSuperview" ref="155636246"/>
 										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="760937031"/>
@@ -147,7 +147,7 @@
 										<reference key="IBUIToolbar" ref="155636246"/>
 									</object>
 									<object class="IBUIBarButtonItem" id="840080632">
-										<string key="IBUITitle">save</string>
+										<string key="IBUITitle">good enough</string>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 										<int key="IBUIStyle">1</int>
 										<reference key="IBUIToolbar" ref="155636246"/>

@@ -34,8 +34,9 @@
     _defaultTextFrame = _descriptionText.frame;
     _defaultTextBackground = _descriptionText.backgroundColor;
     
-    UIImage *resizableButton = [[UIImage imageNamed:@"greenButton.png" ] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 20, 10, 20)];
-    UIImage *resizableButtonHighlighted = [[UIImage imageNamed:@"greenButtonHighlighted.png" ] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 20, 10, 20)];
+    UIImage *resizableButton = [self colorImageForButton:[UIColor colorWithRed:86/255.0 green:87/255.0 blue:89/255.0 alpha:1]];
+    UIImage *resizableButtonHighlighted = [self colorImageForButton:[UIColor colorWithRed:54/255.0 green:47/255.0 blue:71/255.0 alpha:1]];
+
     [_saveButton setBackgroundImage:resizableButton forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [_saveButton setBackgroundImage:resizableButtonHighlighted forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [_saveButton setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:@"Helvetica" size:17.0], UITextAttributeFont, [UIColor clearColor], UITextAttributeTextShadowColor, nil] forState:UIControlStateNormal];
@@ -46,11 +47,29 @@
     [_cancelButton addGestureRecognizer:tapGesture];
 
     
-    
     CGRect actionBarFrame = [_keyboardActionsBar frame];
     actionBarFrame.origin.y += actionBarFrame.size.height;
     _keyboardActionsBar.frame = actionBarFrame;
     _defaultActionBarFrame = actionBarFrame;
+}
+
+- (UIImage *)colorImageForButton:(UIColor *)color {
+    CGFloat verticalPadding = 10.0;
+    CGFloat horizontalPadding = 67.0;
+    
+    CGRect rect = CGRectMake(0.0f, 0.0f, (horizontalPadding * 2) + 1, (verticalPadding * 2) + 1);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [image resizableImageWithCapInsets:UIEdgeInsetsMake(horizontalPadding, verticalPadding, horizontalPadding, verticalPadding)];
+    
+    return image;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
